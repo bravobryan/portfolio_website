@@ -12,18 +12,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route("/index.html")
-def home_link():
-    return render_template('index.html')
+@app.route("/<string:page_name>")
+def html_page(page_name):
+    return render_template(page_name)
 
-@app.route("/works.html")
-def works_link():
-    return render_template('works.html')
-
-@app.route("/about.html")
-def about_me_link():
-    return render_template('about.html')
-
-@app.route("/contact.html")
-def contact_link():
-    return render_template('contact.html')
