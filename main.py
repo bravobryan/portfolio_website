@@ -23,11 +23,11 @@ def write_to_file(data):
         message = data['message']
         file = database.write(f"\n{email},{subject},{message}")
 
-@app.route('/submit_form', methods=['POST', 'GET'])
-def submit_form():
-    if request.method == "POST":
-        data = request.form.to_dict()
-        write_to_file(data)
-        return redirect('/thankyou.html')
-    else:
-        return "Something went wrong, try again!"
+# @app.route('/submit_form', methods=['POST', 'GET'])
+# def submit_form():
+#     if request.method == "POST":
+#         data = request.form.to_dict()
+#         write_to_file(data)
+#         return redirect('/thankyou.html')
+#     else:
+#         return "Something went wrong, try again!"
