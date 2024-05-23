@@ -16,3 +16,4 @@ def index():
 def html_page(page_name):
     return render_template(page_name)
 
+#this is a note
