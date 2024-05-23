@@ -31,3 +31,10 @@ def write_to_file(data):
 #         return redirect('/thankyou.html')
 #     else:
 #         return "Something went wrong, try again!"
+
+##-- Code for BASH --##
+# git init
+# git remote add origin {REMOTE_URL}
+# git pull origin master
+# git branch --set-upstream-to=origin/master master
+# git pull
