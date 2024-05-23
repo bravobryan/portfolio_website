@@ -3,7 +3,7 @@ from flask import Flask, render_template, url_for, request, redirect
 app = Flask(__name__)
 
 ##-- IN POWERSHELL --##
-#- $env:FLASK_APP = "server"
+#- $env:FLASK_APP = "main"
 #- flask run
 
 #- $env:FLASK_ENV="developer"  to turn on debug mode on.

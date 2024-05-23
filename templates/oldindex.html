@@ -16,38 +16,10 @@
             position: sticky;
             top: 0;
             z-index: 1000;
-            background-color: #2e3532; /* Dark Green */
-        }
-        .navbar-brand {
-            display: flex;
-            align-items: center;
-            color: #e0e2db !important; /* Light Grey */
-        }
-        .navbar-brand small {
-            font-size: 0.8rem;
-            color: #d3efbd; /* Light Green */
-            margin-left: 5px;
-        }
-        .nav-link {
-            color: #e0e2db !important; /* Light Grey */
-        }
-        .nav-link:hover {
-            color: #ef6351 !important; /* Red */
-        }
-        body {
-            font-family: Arial, sans-serif;
-            color: #2e3532; /* Dark Green */
-        }
-        h1, h5 {
-            color: #ef6351; /* Red */
         }
         .about-section, .projects-section, .skills-section, .contact-section {
             text-align: center;
             padding: 50px 20px;
-            background-color: #e0e2db; /* Light Grey */
-        }
-        .projects-section, .skills-section {
-            background-color: #d2d4c8; /* Lighter Grey */
         }
         .about-section img {
             width: 150px;
@@ -57,11 +29,6 @@
         }
         .projects-section .card, .skills-section .card, .contact-section .icon {
             margin: 20px;
-            border: none;
-        }
-        .projects-section .card-body, .skills-section .card-body {
-            background-color: #e0e2db; /* Light Grey */
-            border-radius: 10px;
         }
         .skills-section .card img {
             width: 100px;
@@ -69,8 +36,8 @@
             margin: 20px 0;
         }
         .contact-section {
-            background-color: #2e3532; /* Dark Green */
-            color: #e0e2db; /* Light Grey */
+            background-color: #000;
+            color: #fff;
         }
         .contact-section .icon {
             display: inline-block;
@@ -82,22 +49,13 @@
             height: 50px;
             margin-bottom: 10px;
         }
-        .contact-section .icon p {
-            color: #d3efbd; /* Light Green */
-        }
-        .contact-section p {
-            color: #e0e2db; /* Light Grey */
-        }
-        .contact-section .icon img:hover {
-            transform: scale(1.1);
-        }
     </style>
 </head>
 <body>
 
     <!-- Sticky Navigation Bar -->
-    <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#">My Portfolio <small>Data Analyst / Data Scientist</small></a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">My Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -195,8 +153,8 @@
                 <div class="col-md-3">
                     <div class="card">
                         <div class="card-body">
-                            <img src="images/skills/2.png" alt="Machine Learning">
-                            <h5 class="card-title">Machine Learning</h5>
+                            <img src="images/skills/2.png" alt="Data Visualization">
+                            <h5 class="card-title">Data Visualization</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu. Maecenas lacinia scelerisque arcu a eleifend. Suspendisse imperdiet arcu ex, vel feugiat enim lacinia tincidunt.</p>
                             <a href="#" class="card-link">Link to course or bootcamp</a>
                         </div>
@@ -205,8 +163,8 @@
                 <div class="col-md-3">
                     <div class="card">
                         <div class="card-body">
-                            <img src="images/skills/3.png" alt="Data Visualization">
-                            <h5 class="card-title">Data Visualization</h5>
+                            <img src="images/skills/3.png" alt="SQL">
+                            <h5 class="card-title">SQL</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed nisl erat. Sed et purus ornare, eleifend tellus ut, fermentum arcu. Maecenas lacinia scelerisque arcu a eleifend. Suspendisse imperdiet arcu ex, vel feugiat enim lacinia tincidunt.</p>
                             <a href="#" class="card-link">Link to course or bootcamp</a>
                         </div>
