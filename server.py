@@ -10,4 +10,4 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return "<p>This is Bryan's Server!</p>"
+    return "<p>This is Bryan's Portfolio!</p>"
