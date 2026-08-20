@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="./static/icons/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryan M. Bravo </title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Custom CSS for sticky navbar */
+        .navbar {
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #31352E; /* Dark Green */
+        }
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            color: #C2D2D9 !important; /* Light Grey */
+        }
+        .navbar-brand small {
+            font-size: 0.8rem;
+            color: #d3efbd; /* Light Green */
+            margin-left: 5px;
+        }
+        .nav-link {
+            color: #C2D2D9 !important; /* Light Grey */
+        }
+        .nav-link:hover {
+            color: #448044 !important; /* Green */
+        }
+        body {
+            font-family: Georgia, serif;
+            color: #31352E; /* Dark Green */
+        }
+        h1, h5 {
+            color: #448044; /* Green */
+        }
+        .about-section, .projects-section, .education-section, .contact-section {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #C2D2D9; /* Light Grey */
+        }
+        .projects-section, .education-section {
+            background-color: #E3E6E0; /* Light Green */
+        }
+        .about-section img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            margin: 20px 0;
+        }
+        .projects-section .card, .education-section .card, .contact-section .icon {
+            margin: 20px;
+            border: none;
+        }
+        .projects-section .card-body, .education-section .card-body {
+            background-color: #C2D2D9; /* Light Grey */
+            border-radius: 10px;
+        }
+        .education-section .card img {
+            width: 100px;
+            height: 100px;
+            margin: 20px 0;
+        }
+        .contact-section {
+            background-color: #31352E; /* Dark Green */
+            color: #e0e2db; /* Light Grey */
+        }
+        .contact-section .icon {
+            display: inline-block;
+            text-align: center;
+            margin: 20px;
+        }
+        .contact-section .icon img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .contact-section .icon p {
+            color: #d3efbd; /* Light Green */
+        }
+        .contact-section p {
+            color: #C2D2D9; /* Light Grey */
+        }
+        .contact-section .icon img:hover {
+            transform: scale(1.1);
+        }
+        .button {
+          background-color: #31352E; /* Dark Green */
+          border: none;
+          border-radius: 8px;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        .button2 {background-color: #448044;} /* Green */
+    </style>
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Bryan M. Bravo <small>Analytics Engineer | Data Scientist | Actively Interviewing</small></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#professional">Professional</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section (Anchor for Home Link) -->
+    <div id="home"></div>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <h1>About Me</h1>
+            <img src="./static/images/about/1.jpg" alt="Profile Picture" class="img-fluid">
+                <p>I’m an Analytics Engineer who builds fast, reliable, and scalable data systems that turn messy, inconsistent data into trusted, analysis-ready assets. I blend cloud-native engineering (PySpark, SQL, Databricks, AWS, Azure) with a product mindset—focusing on observability, automated validation, cost-efficient ETL/ELT design, and intuitive interfaces that empower analysts, data scientists, and ML teams.</p>
+        </div>
+    </section>
+    
+<!-- Professional Section -->
+    <section class="education-section" id="education">
+        <div class="container">
+            <h1>Professional Experience</h1>
+            <p><strong>Across roles in consulting and operations, I’ve delivered measurable improvements in data performance, governance, and decision-making:</strong></p>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Analyst Consultant</strong><p><em>Corios, LLC | Sep 2024 - Feb 2026</em></p></h5>
+                            <p class="card-text"><strong>Skills: PySpark | Big Data ETL | Cloud-Native Analytics | Cross-Team Collaboration</strong></p>
+                            <p class="card-text">Delivered analytics solutions that improved data accessibility, optimized ETL performance, and enabled ML‑ready datasets across life insurance and banking clients. </p>
+                            <p>•	Built and optimized ETL pipelines using PySpark, SQL, and AWS/Azure, including a successful analytics migration from SAS to PySpark syntax.</p>
+                            <p>•	Improved big-data ETL runtimes from hours to minutes. Improving scalabilty and reliability</p>
+                            <p>•	Collaborated with cross‑functional stakeholders to deliver cloud‑native analytics solutions; leveraged large language models (Claude) for chat completions, prompt engineering, and VS Code‑based workflow acceleration.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Building and Systems Engineering Specialist</strong><p><em>United Parcel Service (UPS) | Aug 2018 - Sep 2022</em></p></h5>
+                            <p class="card-text"><strong>Skills: Python | SQL | Power BI | KPI Development</strong></p>
+                            <p class="card-text">Delivered operational insights and cost‑saving analytics using SQL, Python, and Power BI, influencing business decisions across facilities and logistics operations.</p>
+                            <p>•	Built dashboards and analytical models that improved labor forecasting and mechanical system efficiency (automated conveyor belt systems).</p>
+                            <p>•	Partnered with engineering, operations, and finance teams to deliver data‑driven recommendations that reduced downtime and improved throughput.</p>
+                            <p>•	Designed reporting tools that improved visibility into operational KPIs and resource allocation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Academic Section -->
+    <section class="education-section" id="education">
+        <div class="container">
+            <h1>Academic Background</h1>
+            <p><strong>I hold a Master of Science in Data Analytics from Western Governors University, where I earned the Capstone Excellence Award for a geospatial analytics project using K-Means clustering, ANOVA, and Tukey HSD to optimize e-bike station placement in Portland, OR. My graduate work also included ARIMA time-series forecasting, NLP sentiment analysis with RNNs/TensorFlow, and advanced data mining techniques.</strong></p>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Master of Science in Data Analytics</h5>
+                            <p class="card-text"><strong>Western Governors University (WGU)</strong></p>
+                            <p class="card-text">Completed advanced coursework in machine learning, statistical modeling, and predictive analytics, applying these methods to real‑world business problems.</p>
+                            <p>     •	Built ML models and statistical analyses using <strong>Python, SQL, and Tableau.</strong> </p>
+                            <p>     •	Completed projects focused on forecasting, classification, regression, and data visualization. </p>
+                            <p>     •	Awarded <strong>Capstone Excellence Award</strong> for a geospatial analytics project using K‑means clustering, ANOVA, and Tukey HSD to identify optimal E‑bike station locations in Portland, OR.</p>
+                            <p class="card-text"><strong>Media:</strong></p>
+                            <blockquote class="badgr-badge" style="font-family: Helvetica, Roboto, &quot;Segoe UI&quot;, Calibri, sans-serif;"><a href="https://api.badgr.io/public/assertions/yiwACL6aRkCQiTJ5CEhWaQ"><img width="120px" height="120px" src="https://api.badgr.io/public/assertions/yiwACL6aRkCQiTJ5CEhWaQ/image"></a><p class="badgr-badge-name" style="hyphens: auto; overflow-wrap: break-word; word-wrap: break-word; margin: 0; font-size: 16px; font-weight: 600; font-style: normal; font-stretch: normal; line-height: 1.25; letter-spacing: normal; text-align: left; color: #05012c;">WGU Capstone Excellence Award</p><p class="badgr-badge-date" style="margin: 0; font-size: 12px; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: #555555;"><strong style="font-size: 12px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: #000;">Awarded: </strong>May 19, 2024</p><p class="badgr-badge-recipient" style="margin: 0; font-size: 12px; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: #555555;"><strong style="font-size: 12px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: #000;">Awarded To: </strong><span style="display: block;"> Bryan M Bravo</span></p><p style="margin: 16px 0; padding: 0;"><a class="badgr-badge-verify" target="_blank" href="https://badgecheck.io?url=https%3A%2F%2Fapi.badgr.io%2Fpublic%2Fassertions%2FyiwACL6aRkCQiTJ5CEhWaQ" style="box-sizing: content-box; display: flex; align-items: center; justify-content: center; margin: 0; font-size:14px; font-weight: bold; width: 48px; height: 16px; border-radius: 4px; border: solid 1px black; text-decoration: none; padding: 6px 16px; margin: 16px 0; color: black;">VERIFY</a></p><script async="async" src="https://wgu.badgr.com/assets/widgets.bundle.js"></script></blockquote>
+                            <blockquote class="badgr-badge" style="font-family: Helvetica, Roboto, &quot;Segoe UI&quot;, Calibri, sans-serif;"><a href="https://badges.parchment.com/public/assertions/v68MLQIhSs-9HEOLbh6xkg"><img width="120px" height="120px" src="https://badges.parchment.com/public/assertions/v68MLQIhSs-9HEOLbh6xkg/image"></a><p class="badgr-badge-name" style="hyphens: auto; overflow-wrap: break-word; word-wrap: break-word; margin: 0; font-size: 16px; font-weight: 600; font-style: normal; font-stretch: normal; line-height: 1.25; letter-spacing: normal; text-align: left; color: #05012c;">WGU Certificate: Advanced Data Modeling</p><p class="badgr-badge-date" style="margin: 0; font-size: 12px; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: #555555;"><strong style="font-size: 12px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: #000;">Awarded: </strong>04/10/2024</p><p style="margin: 16px 0; padding: 0;"><a class="badgr-badge-verify" target="_blank" href="https://badgecheck.io?url=https%3A%2F%2Fbadges.parchment.com%2Fpublic%2Fassertions%2Fv68MLQIhSs-9HEOLbh6xkg" style="box-sizing: content-box; display: flex; align-items: center; justify-content: center; margin: 0; font-size:14px; font-weight: bold; width: 48px; height: 16px; border-radius: 4px; border: solid 1px black; text-decoration: none; padding: 6px 16px; margin: 16px 0; color: black;" aria-label="Verify (opens in new window)">VERIFY</a></p><script async="async" src="https://badges.parchment.com/assets/widgets.bundle.js"></script></blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Bachelor of Science Business Administration, Business Management</h5>
+                            <p class="card-text"><strong>Western Governors University (WGU)</strong></p>
+                            <p class="card-text">Successfully developed a comprehensive business plan for the Business Management Capstone as a written project. Additionally I earned an Excellence Award for a Process, Logistics, and Operations project optimizing workflow efficiency.</p>
+                            <p class="card-text"><strong>Media:</strong></p>
+                            <blockquote class="badgr-badge" style="font-family: Helvetica, Roboto, &quot;Segoe UI&quot;, Calibri, sans-serif;"><a href="https://badges.parchment.com/public/assertions/b1rosTRDT7yXqfZummJmzA"><img width="120px" height="120px" src="https://badges.parchment.com/public/assertions/b1rosTRDT7yXqfZummJmzA/image"></a><p class="badgr-badge-name" style="hyphens: auto; overflow-wrap: break-word; word-wrap: break-word; margin: 0; font-size: 16px; font-weight: 600; font-style: normal; font-stretch: normal; line-height: 1.25; letter-spacing: normal; text-align: left; color: #05012c;">WGU Certificate: Strategic Thinking and Innovation</p><p class="badgr-badge-date" style="margin: 0; font-size: 12px; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: #555555;"><strong style="font-size: 12px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: #000;">Awarded: </strong>03/01/2022</p><p style="margin: 16px 0; padding: 0;"><a class="badgr-badge-verify" target="_blank" href="https://badgecheck.io?url=https%3A%2F%2Fbadges.parchment.com%2Fpublic%2Fassertions%2Fb1rosTRDT7yXqfZummJmzA" style="box-sizing: content-box; display: flex; align-items: center; justify-content: center; margin: 0; font-size:14px; font-weight: bold; width: 48px; height: 16px; border-radius: 4px; border: solid 1px black; text-decoration: none; padding: 6px 16px; margin: 16px 0; color: black;" aria-label="Verify (opens in new window)">VERIFY</a></p><script async="async" src="https://badges.parchment.com/assets/widgets.bundle.js"></script></blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certification Section -->
+    <section class="education-section" id="education">
+        <div class="container">
+            <h1>Certifications:</h1>
+            <h2>AWS Certified Cloud Practitioner | Dataiku Core Designer | Azure Fundamentals Certification (AZ-900) | WGU Certificate: Advanced Data Modeling.</h2>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <h1>Projects</h1>
+            <div class="row">
+
+                <div class="col-sm-6">
+                    <div class="card">
+                        <img src="./static/images/projects/dtmnngrfrm.jpg" class="card-img-top" alt="Predictive Analysis">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>FX Reserves Forecasting with Multi‑Source Macroeconomic & Geopolitical Data</strong><p>Through Random Forest Regression Modeling</p></h5>
+                            <p class="card-text"><strong>Personal Project:</strong> forecasting FX reserves using macroeconomic + geopolitical data from seven APIs and public datasets. I built a full PySpark + pandas pipeline, engineered features, tuned Random Forest models, and tackled real‑world challenges like missing data, temporal alignment, and reporting lags. The result is a scalable workflow for short‑term FX reserve prediction and imputation — and a dataset others can build on.</p>
+                            <p class="card-text"><em>Skills: <strong>Random Forest Regressor Modeling | Cross Validation | Python (PySpark, Sci-Kit Learn, Matplotlib, Seaborn, Pandas, and Numpy).</strong></em></p>
+                            <a href="https://github.com/bravobryan/MLProject" class="button">GitHub Repo Link to Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="card">
+                        <img src="./static/images/projects/cpstne.jpg" class="card-img-top" alt="Unsupervised Learning and Hypothesis Testing">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Unsupervised Learning and Hypothesis Testing</strong><p>Graduate Capstone Excellence Award</p></h5>
+                            <p class="card-text"><strong>Graduate Capstone Project:</strong> Identifying Optimal Locations for New E-Bike Stations using <strong>K-Means Clustering</strong> with <strong>ANOVA</strong> and <strong>Tukey HSD Testing</strong>.</p>
+                            <blockquote class="badgr-badge" style="font-family: Helvetica, Roboto, &quot;Segoe UI&quot;, Calibri, sans-serif;"><a href="https://api.badgr.io/public/assertions/yiwACL6aRkCQiTJ5CEhWaQ"><img width="120px" height="120px" src="https://api.badgr.io/public/assertions/yiwACL6aRkCQiTJ5CEhWaQ/image"></a><p class="badgr-badge-name" style="hyphens: auto; overflow-wrap: break-word; word-wrap: break-word; margin: 0; font-size: 16px; font-weight: 600; font-style: normal; font-stretch: normal; line-height: 1.25; letter-spacing: normal; text-align: left; color: #05012c;">WGU Capstone Excellence Award</p><p class="badgr-badge-date" style="margin: 0; font-size: 12px; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: #555555;"><strong style="font-size: 12px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: #000;">Awarded: </strong>May 19, 2024</p><p class="badgr-badge-recipient" style="margin: 0; font-size: 12px; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: #555555;"><strong style="font-size: 12px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: 1.67; letter-spacing: normal; text-align: left; color: #000;">Awarded To: </strong><span style="display: block;"> Bryan M Bravo</span></p><p style="margin: 16px 0; padding: 0;"><a class="badgr-badge-verify" target="_blank" href="https://badgecheck.io?url=https%3A%2F%2Fapi.badgr.io%2Fpublic%2Fassertions%2FyiwACL6aRkCQiTJ5CEhWaQ" style="box-sizing: content-box; display: flex; align-items: center; justify-content: center; margin: 0; font-size:14px; font-weight: bold; width: 48px; height: 16px; border-radius: 4px; border: solid 1px black; text-decoration: none; padding: 6px 16px; margin: 16px 0; color: black;">VERIFY</a></p><script async="async" src="https://wgu.badgr.com/assets/widgets.bundle.js"></script></blockquote>
+                            <p class="card-text"><em>Skills: <strong>ANOVA Hypothesis Testing, Pairwise Tukey HSD Post-hoc Analysis, Python, Jupyter Notebook, SciPy, Scikit-Learn, Pandas, GeoPandas, Folium, Matplotlib, and Seaborn.</strong></em></p>
+                            <p class="card-text"><em>To maintain academic integrity, the project documents and source code is available upon request.</em></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <img src="./static/images/projects/nlprnn.jpg" class="card-img-top" alt="Sentiment Analysis">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Sentiment Analysis using a Recurrent Neural Network (RNN) Deep Learning Model</strong><p>Keras and Natural Language Processing Techniques (NLP)</p></h5>
+                            <p class="card-text"><strong>Academic Project:</strong> Created <strong>tokenized data</strong> from Amazon product reviews, prepared by identifying and removing <strong>unusual characters</strong>, <strong>punctuation</strong>, and <strong>English stop words</strong>. Additionally, the final RNN model performed well with a <strong>0.80 accuracy score</strong>.</p>
+                            <p class="card-text"><em>Skills: <strong>Tensorflow, Keras, Natural Language Processing (NLP), Python Programming, Recurrent Neural Network (RNN), and Deep Learning Modeling.</strong></em></p>
+                            <p class="card-text"><em>To maintain academic integrity, the project documents and source code is available upon request.</em></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <img src="./static/images/projects/dtmnngtsm.jpg" class="card-img-top" alt="Time-Series Modeling.">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Time-Series Modeling.</strong><p>ARIMA Models and Python</p></h5>
+                            <p class="card-text"><strong>Academic Project:</strong> Used an <strong>ARIMA</strong> machine learning model to generate a forecast for hospital revenue. Ensured accurate forecast performance by preparing the data, identifying the optimal ARIMA model, and evaluating the model.</p>
+                            <p class="card-text"><em>Skills: <strong>ARIMA Modeling, ACF, PACF, Python, Jupyter Notebook, statsmodels, SciPy, Pandas, Matplotlib, and Seaborn.</strong></em></p>
+                            <p class="card-text"><em>To maintain academic integrity, the project documents and source code is available upon request.</em></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <img src="./static/images/projects/advncddtqustn.jpg" class="card-img-top" alt="Data Analysis Through Tableau">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Data Analysis Through Tableau</strong><p>Tableau Desktop, pgAdmin4, and postgreSQL</p></h5>
+                            <p class="card-text"><strong>Academic Project:</strong> Imported data using <strong>SQL operations</strong>. Connected <strong>Tableau Desktop</strong> directly to the project's database and imported only the data needed for dashboard creation for <strong>computational efficiency</strong>. Provided data insights for a non-technical audience and <strong>created an interactive dashboard</strong> helping stakeholders make informed decisions.</p>
+                            <p class="card-text"><em>Skills: <strong>Tableau Desktop, SQL, and Dashboard Creation.</strong></em></p>
+                            <p class="card-text"><em>To maintain academic integrity, the project documents and source code is available upon request.</em></p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h1>Contact Me</h1>
+            <div class="row justify-content-center">
+                <a href="mailto:bravobryan.bb@gmail.com">
+                    <div class="col-md-6 text-center">
+                        <p><strong>bravobryan.bb@gmail.com</strong></p>
+                    </div>
+                </a>
+            </div>
+            <div class="row justify-content-center">
+                <a href="https://www.linkedin.com/in/bravo-bryan" target="_blank" class="text-decoration-none">
+                    <div class="icon">
+                        <img src="./static/icons/linkedin.png" alt="LinkedIn">
+                        <p>LinkedIn</p>
+                    </div>
+                </a>
+                <a href="https://github.com/bravobryan" target="_blank" class="text-decoration-none">
+                    <div class="icon">
+                        <img src="./static/icons/github.png" alt="GitHub">
+                        <p>GitHub</p>
+                    </div>
+                </a>
+                <!-- <div class="icon">
+                    <img src="./static/icons/medium.png" alt="Medium">
+                    <p>Medium</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
